@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+    margin-left: 90px;
+    margin-right: 90px;
+    
+}
+#backbtn{
+   width: 3%;
+   position: absolute;
+   bottom: 500px;
+   visibility: hidden;
+}
+.blur{
+    width: 80%;
+}
+header{
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    
+    
+}
+.task{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.list{
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: italic;
+    color: purple;
+}
+nav{
+    text-align: center;
+    align-items: center;
+    
+}
+.additem{
+    position: absolute;
+    right: 90px;
+    top: 35px;
+    flex-direction: row;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    
+}
+.addicon{
+    width: 37px;
+    position: absolute;
+    right: 250px;
+    top: 41px;
+}
+.noitems{
+    color: white;
+    font-size: 30px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.additempopup{
+    background-color: azure;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 30%;
+    padding: 10px;
+    text-align: center;
+    visibility: hidden;
+    
+
+}
+#inputforitem{
+    width: 80%;
+    align-self: center;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}
+#addbtnfornewitem{
+    align-self: center;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}
+#closebtnfornewitem{
+    align-self: center;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}
+.itembox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.addlistpopup{
+    background-color: azure;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-bottom: auto;
+    padding: 10px;
+    text-align: center;
+    visibility:hidden ;
+    
+}
+#inputforlist{
+    width: 80%;
+    align-self: center;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}
+#addbtnfornewlist{
+    align-self: center;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}
+#closebtnfornewlist{
+    align-self: center;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To DO JS</title>
+  </head>
+  <body>
+    <div class="blur" id="blur">
+      <header>
+        <h1><span class="task">Tasks</span><span class="list">List</span></h1>
+
+        <nav>
+          <span onclick="additem()">
+            <img src="./media/addicon.png" alt="icon" class="addicon" />
+            <span class="additem">Add Item</span>
+          </span>
+        </nav>
+      </header>
+
+      <div class="noitems" id="noitemmsg">No items in to do list</div>
+
+      <div class="additempopup" id="additempopup">
+        <span id="headerofnewitem">ADD NEW LIST</span>
+        <input
+          type="text"
+          value=""
+          placeholder="add new list"
+          id="inputforitem"
+        />
+        <input
+          type="button"
+          value="ADD"
+          id="addbtnfornewitem"
+          onclick="createNewList()"
+        />
+        <input
+          type="button"
+          value="CLOSE"
+          id="closebtnfornewitem"
+          onclick="closeListPopup()"
+        />
+      </div>
+
+      <div class="addlistpopup" id="addlistpopup">
+        <span id="headerofnewlist">ADD NEW ITEM</span>
+        <input
+          type="text"
+          value=""
+          placeholder="add new item"
+          id="inputforlist"
+        />
+        <input
+          type="button"
+          value="ADD"
+          id="addbtnfornewlist"
+          onclick="createNewListItem()"
+        />
+        <input
+          type="button"
+          value="CLOSE"
+          id="closebtnfornewlist"
+          onclick="closeListItemPopup()"
+        />
+      </div>
+
+      <div class="itembox" id="itembox"></div>
+    </div>
+    <span><img src="./media/backicon.jpg" alt="back-icon" id="backbtn" /></span>
+    <script src="script.js"></script>
+  </body>
+</html>
